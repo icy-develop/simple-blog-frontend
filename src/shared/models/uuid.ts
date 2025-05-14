@@ -1,0 +1,1 @@
+export type UUIDv4 = `${string}${string}${string}${string}${string}${string}${string}${string}${string}-${string}${string}${string}${string}${string}-4${string}${string}${string}${string}-${"8" | "9" | "A" | "B"}${string}${string}${string}${string}-${string}${string}${string}${string}${string}${string}${string}${string}${string}${string}${string}${string}${string}`;

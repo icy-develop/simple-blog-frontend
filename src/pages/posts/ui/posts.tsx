@@ -1,5 +1,5 @@
 import {get_posts} from "../api/get_posts.ts";
-import {PostItem} from "@/shared/ui/post_item.tsx";
+import {PostItem} from "@/pages/posts/ui/post_item.tsx";
 import type {Post} from "@/shared/models/post.ts";
 import {useEffect, useState} from "preact/hooks";
 import './posts.css';

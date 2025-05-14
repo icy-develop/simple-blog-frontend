@@ -3,7 +3,7 @@ import {About} from "@/pages/about";
 import {ErrorBoundary, LocationProvider, Route, Router} from 'preact-iso';
 import {NotFound} from "./routes/not_found.tsx";
 import {Posts} from "@/pages/posts";
-import AsyncRoute from "preact-async-route";
+import {PostDetails} from "@/pages/post_details/ui/post_details.tsx";
 
 export function Index() {
     return (
@@ -19,7 +19,9 @@ export function Index() {
                     </nav>
                 </header>
                 <Router>
-                    <AsyncRoute path="/" component={Posts}></AsyncRoute>
+                    <Route path="/" component={Posts}></Route>
+                    {/*<Route path="/profile/:id" component={}></Route>*/}
+                    <Route path="/posts/:id" component={PostDetails} />
                     <Route path="/about" component={About}></Route>
                     <Route component={NotFound} default />
                 </Router>

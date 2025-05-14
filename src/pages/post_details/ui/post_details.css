@@ -1,0 +1,8 @@
+.post-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.post-details p, .post-details h2 {
+    text-align: justify;
+}
